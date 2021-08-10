@@ -1,0 +1,35 @@
+.features {
+  margin: 0 20px;
+  margin-bottom: 46px;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  color: $black-color;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.features__list {
+  @include list-reset;
+}
+
+.features__item {
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.features__description {
+  margin: 0;
+  padding-left: 80px;
+
+  color: $light-grey-color;
+  font-family: "Arial", sans-serif;
+}
