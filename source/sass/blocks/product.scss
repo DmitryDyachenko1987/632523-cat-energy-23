@@ -1,0 +1,33 @@
+.product {
+  padding: 19px 20px 25px;
+
+  border-bottom: 1px solid #ebebeb;
+}
+
+.product__info {
+  margin-bottom: 22px;
+}
+
+.product__title {
+  margin: 0;
+  margin-bottom: 14px;
+
+  color: $grey-color;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.product__table {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product__link {
+  padding: 10px 0;
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}

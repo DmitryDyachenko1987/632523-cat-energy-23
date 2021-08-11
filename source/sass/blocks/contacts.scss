@@ -18,7 +18,11 @@
 }
 
 .contacts__adress {
-  color: $light-grey-color;
+  font-family: "Arial", sans-serif;
   line-height: 20px;
   font-style: normal;
+}
+
+.contacts__map-image {
+  display: block;
 }
