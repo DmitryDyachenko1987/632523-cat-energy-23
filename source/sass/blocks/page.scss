@@ -1,0 +1,20 @@
+.page__body {
+  color: $light-grey-color;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.page__title {
+  margin: 0;
+  padding: 27px 20px 41px;
+
+  color: $black-color;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+
+  border-bottom: 1px solid #ebebeb;
+}

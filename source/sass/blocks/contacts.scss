@@ -1,0 +1,28 @@
+.contacts {
+  margin: 0 auto;
+}
+
+.contacts__wrapper {
+  padding: 28px 20px 26px;
+}
+
+.contacts__title {
+  margin: 0;
+
+  color: #111111;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contacts__adress {
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.contacts__map-image {
+  display: block;
+}

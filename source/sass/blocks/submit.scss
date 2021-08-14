@@ -1,0 +1,19 @@
+.submit {
+  margin: 0 20px;
+}
+
+.submit__button {
+  margin-bottom: 21px;
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.submit__note {
+  display: block;
+
+  color: $black-color;
+  line-height: 16px;
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+.social__list {
+  @include list-reset;
+
+  padding-top: 24px;
+  padding-bottom: 23px;
+
+  border-bottom: 1px solid #d9d9d9;
+}
