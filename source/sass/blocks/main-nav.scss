@@ -21,3 +21,43 @@
 
   border-bottom: 1px solid #e6e6e6;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 440px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__link {
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 478px;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  // .main-nav__link {
+  //   color: $white-color;
+  // }
+}

@@ -12,3 +12,30 @@
 
   border-bottom: 1px solid #d9d9d9;
 }
+
+.links__logo-image {
+  display: block;
+
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .links__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 708px;
+  }
+
+  .links__logo-link {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .links__wrapper {
+    width: 1220px;
+  }
+}

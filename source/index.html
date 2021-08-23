@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -40,11 +41,13 @@
       <!-- Промо блок -->
       <section class="promo">
         <div class="promo__wrapper">
-          <h2 class="promo__title">Функциональное питание для котов</h2>
-          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <div class="promo__text-wrapper">
+            <h2 class="promo__title">Функциональное питание для котов</h2>
+            <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          </div>
           <img class="promo__image" src="img/index-can-mobile.png" width="280" height="270" alt="Банка корма Cat Energy">
+          <a class="promo__link button" href="form.html">Подобрать программу</a>
         </div>
-        <a class="promo__link button" href="form.html">Подобрать программу</a>
       </section>
       <!-- Блок выбора програм -->
       <section class="programs">
@@ -85,29 +88,35 @@
       <!-- Блок истории -->
       <section class="story">
         <h2 class="story__title">Живой пример</h2>
-        <p class="story__description">Борис сбросил 5 кг за 2 месяца,  свпросто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менялоих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="story__stats">
-          <ul class="story__stats-list">
-            <li class="story__stats-item">
-              <p class="story__stats-value">5 кг <span class="story__stats-description">снижение веса</span></p>
-            </li>
-            <li class="story__stats-item">
-              <p class="story__stats-value">60 дней <span class="story__stats-description">затрачено времени</span></p>
-            </li>
-          </ul>
-          <div class="story__costs">
-            <p class="story__costs-description">Затраты на питание: <span class="story__costs-value">15 000 руб.</span></p>
-          </div>
-        </div>
-        <div class="story__range-block">
-          <img class="story__range-image story__range-image--before" src="img/before-mobile.png" width="311" height="232" alt="">
-          <div class="story__range">
-            <span class="story__range-text story__range-text--before">Было</span>
-            <div class="story__range-stripe">
-              <div class="story__range-progress"></div>
+        <div class="story__wrapper">
+          <div class="story__inner-wrapper">
+            <div class="story__description-block">
+              <p class="story__description">Борис сбросил 5 кг за 2 месяца,  просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <div class="story__stats">
+                <ul class="story__stats-list">
+                  <li class="story__stats-item">
+                    <p class="story__stats-value">5 кг <span class="story__stats-description">снижение веса</span></p>
+                  </li>
+                  <li class="story__stats-item">
+                    <p class="story__stats-value">60 дней <span class="story__stats-description">затрачено времени</span></p>
+                  </li>
+                </ul>
+                <div class="story__costs">
+                  <p class="story__costs-description">Затраты на питание: <span class="story__costs-value">15 000 руб.</span></p>
+                </div>
+              </div>
             </div>
-            <div class="story__range-toggle"></div>
-            <span class="story__range-text story__range-text--after">Стало</span>
+            <div class="story__range-block">
+              <img class="story__range-image story__range-image--before" src="img/before-mobile.png" width="311" height="232" alt="">
+              <div class="story__range">
+                <span class="story__range-text story__range-text--before">Было</span>
+                <div class="story__range-stripe">
+                  <div class="story__range-progress"></div>
+                </div>
+                <div class="story__range-toggle"></div>
+                <span class="story__range-text story__range-text--after">Стало</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

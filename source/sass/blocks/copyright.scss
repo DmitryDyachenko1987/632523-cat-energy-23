@@ -1,10 +1,22 @@
 .copyright__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   padding: 22px 0;
+
+  text-decoration: none;
 }
 
 .copyright__sign {
+  color: $light-grey-color;
   font-family: "Arial", sans-serif;
   font-size: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    padding: 0;
+    width: 180px;
+  }
 }
