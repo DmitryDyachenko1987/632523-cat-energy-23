@@ -2,6 +2,11 @@
   padding: 25px 20px 35px;
 }
 
+.all-products__wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
 .add-products__title {
   margin: 0;
   padding-bottom: 36px;
@@ -16,6 +21,11 @@
 
 .add-products__list {
   @include list-reset;
+}
+
+.add-products__item-wrapper {
+  margin: 0 auto;
+  width: 320px;
 }
 
 .add-products__item {
@@ -41,13 +51,21 @@
 }
 
 .add-products__table-row {
+  display: flex;
+  justify-content: space-between;
+
+  width: 320px;
+
   font-family: "Arial", sans-serif;
   line-height: 14px;
 }
 
 .add-products__link {
+  display: block;
+
+  margin: 0 auto;
   padding: 10px 0;
-  width: 100%;
+  width: 320px;
 
   font-size: 16px;
   line-height: 20px;
@@ -56,15 +74,21 @@
 
 .add-products__gift {
   margin-top: 36px;
-  padding: 186px 60px 43px;
 
   background-image: url("../../img/gift-photo-mobile.jpg");
   background-repeat: no-repeat;
+  background-position: center 0;
   background-color: $green-color;
 }
 
+.add-products__gift-wrapper {
+  margin: 0 auto;
+  padding: 186px 60px 43px;
+  width: 320px;
+}
+
 .add-products__gift-text {
-  margin: 0;
+  margin: 0 auto;
   width: 160px;
 
   color: $white-color;
