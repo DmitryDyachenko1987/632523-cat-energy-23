@@ -125,3 +125,21 @@
     border-bottom: 1px solid #cdcdcd;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product {
+    width: 245px;
+  }
+
+  .product__wrapper {
+    width: 168px;
+  }
+
+  .product__title {
+    line-height: 21px;
+  }
+
+  .product__table-row {
+    width: 168px;
+  }
+}

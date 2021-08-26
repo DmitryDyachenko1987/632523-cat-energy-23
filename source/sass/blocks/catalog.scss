@@ -9,6 +9,17 @@
     gap: 141px 60px;
 
     margin: 0 auto;
+    margin-bottom: 68px;
     width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 143px 80px;
+
+    margin-bottom: 75px;
+    width: 1220px;
   }
 }

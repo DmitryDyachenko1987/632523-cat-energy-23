@@ -4,6 +4,11 @@
   border-bottom: 1px solid #ebebeb;
 }
 
+.all-products__wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
 .all-products__title {
   margin: 0;
   margin-bottom: 8px;
@@ -75,5 +80,19 @@
 
     margin: 0 auto;
     width: 249px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .all-products {
+    width: 245px;
+  }
+
+  .all-products__wrapper {
+    width: 168px;
+  }
+
+  .all-products__link {
+    width: 168px;
   }
 }
