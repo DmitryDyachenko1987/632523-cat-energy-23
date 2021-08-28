@@ -107,8 +107,9 @@
       content: "";
       position: absolute;
       top: 20px;
+      height: 1px;
       width: 100%;
-      border: 1px solid $green-color;
+      background-color: $green-color;
       z-index: -1;
     }
   }
@@ -176,7 +177,7 @@
   .add-products__gift-wrapper {
     margin-bottom: 76px;
     padding: 0;
-    width: 708px;
+    width: 240px;
   }
 
   .add-products__gift-text {
