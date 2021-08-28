@@ -10,13 +10,14 @@
   background-image: url("../../img/cat-background-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-color: rgba($green-color, 0.85);
 }
 
 .promo__title {
   margin: 0 auto;
   margin-bottom: 25px;
-  padding-top: 27px;
+  padding: 27px 20px 0;
 
   color: $white-color;
   font-size: 36px;

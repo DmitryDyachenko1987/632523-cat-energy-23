@@ -1,4 +1,10 @@
+.page {
+  box-sizing: border-box;
+}
+
 .page__body {
+  margin: 0;
+  padding: 0;
   min-width: 320px;
 
   color: $light-grey-color;
@@ -19,4 +25,22 @@
   font-weight: 400;
 
   border-bottom: 1px solid #ebebeb;
+}
+
+@media (min-width: $tablet-width) {
+  .page__title {
+    margin: 0 auto;
+    width: 708px;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__title {
+    width: 1220px;
+  }
 }

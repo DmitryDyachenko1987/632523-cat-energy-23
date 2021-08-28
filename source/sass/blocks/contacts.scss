@@ -1,14 +1,12 @@
 .contacts {
   position: relative;
-
-  margin: 0 auto;
-  width: 320px;
 }
 
-.contacts__wrapper {
+.contacts__block-wrapper {
   display: flex;
   justify-content: space-between;
 
+  margin: 0 auto;
   padding: 28px 20px 26px;
 }
 
@@ -41,8 +39,9 @@
     width: auto;
   }
 
-  .contacts__wrapper {
-    padding: 62px 71px 58px;
+  .contacts__block-wrapper {
+    padding: 62px 0 58px;
+    width: 626px;
   }
 
   .contacts__title {
@@ -63,9 +62,17 @@
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
+    position: relative;
+
+    margin: 0 auto;
+    width: 1220px;
+  }
+
+  .contacts__block-wrapper {
     position: absolute;
     top: 95px;
-    left: 110px;
+
+    padding: 62px 76px 58px;
 
     background-color: $white-color;
   }

@@ -13,7 +13,46 @@
 .submit__note {
   display: block;
 
+  font-family: "Arial", sans-serif;
   color: $black-color;
   line-height: 16px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .submit {
+    margin: 0;
+  }
+
+  .submit__wrapper {
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 630px;
+  }
+
+  .submit__button {
+    margin: 0;
+    width: 282px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .submit__note {
+    margin-left: 60px;
+
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .submit__wrapper {
+    width: 1220px;
+  }
+
+  .submit__button {
+    width: 568px;
+  }
 }
