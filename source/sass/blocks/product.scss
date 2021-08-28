@@ -7,17 +7,10 @@
   border-bottom: 1px solid #ebebeb;
 }
 
-.product__wrapper {
-  margin: 0 auto;
-  width: 320px;
-}
-
 .product__layout-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  width: 320px;
 }
 
 .product__image-link {
@@ -50,13 +43,13 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+
+  width: 100%;
 }
 
 .product__table-row {
   display: flex;
   justify-content: space-between;
-
-  width: 140px;
 }
 
 .product__link {
