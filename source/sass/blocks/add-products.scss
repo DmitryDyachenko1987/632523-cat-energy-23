@@ -35,6 +35,11 @@
   margin-bottom: 34px;
 }
 
+.add-products__item-wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+
 .add-products__item {
   margin: 0 20px;
   margin-top: -1px;
@@ -122,6 +127,7 @@
     &::before {
       content: "";
       position: absolute;
+
       top: 22px;
       height: 1px;
       width: 100%;

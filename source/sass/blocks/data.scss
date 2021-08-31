@@ -9,6 +9,11 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
+.data__wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+
 .data__row {
   display: flex;
   align-items: center;
@@ -76,6 +81,37 @@
   .data {
     margin: 0;
     padding: 0;
+    width: 570px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .data {
+    font-size: 20px;
+    line-height: 30px;
+
+    border: none;
+  }
+
+  .data__wrapper {
+    width: 630px;
+  }
+
+  .data__row {
+    width: 630px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data {
+    padding: 0;
+  }
+
+  .data__wrapper {
+    width: 570px;
+  }
+
+  .data__row {
     width: 570px;
   }
 }
