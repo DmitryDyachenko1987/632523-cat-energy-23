@@ -1,5 +1,5 @@
 .story {
-  padding: 27px 20px 31px;
+  padding: 27px 0 35px;
 
   background-color: #eaeaea;
 }
@@ -7,6 +7,7 @@
 .story__title {
   margin: 0;
   margin-bottom: 33px;
+  padding: 0 20px;
 
   color: $black-color;
   font-size: 36px;
@@ -17,6 +18,7 @@
 .story__description {
   margin: 0;
   margin-bottom: 25px;
+  padding: 0 20px;
 
   font-family: "Arial", sans-serif;
 }
@@ -44,7 +46,7 @@
 .story__stats-value {
   margin: 0;
   padding-top: 15px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
 
   color: $black-color;
   font-size: 24px;
@@ -71,7 +73,7 @@
 
 .story__costs-description {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 
   color: $black-color;
   line-height: 20px;
@@ -79,10 +81,18 @@
   text-transform: uppercase;
 }
 
+.story__transfer {
+  display: none;
+}
+
 .story__range-image {
+  position: relative;
+  right: 5px;
+
   display: block;
 
   margin: 0 auto;
+  margin-bottom: 34px;
 }
 
 .story__range {
@@ -91,12 +101,12 @@
   align-items: center;
 
   margin: 0 auto;
-  padding: 0 9px;
-  width: 210px;
+  width: 197px;
 }
 
 .story__range-stripe {
-  width: 84px;
+  margin: 0 auto;
+  width: 82px;
   height: 12px;
 
   background-color: $white-color;
@@ -114,14 +124,14 @@
 
 @media (min-width: $tablet-width) {
   .story {
-    padding: 43px 0 0;
+    padding: 40px 0 0;
 
     background-color: $white-color;
   }
 
   .story__title {
     margin: 0 auto;
-    margin-bottom: 63px;
+    margin-bottom: 65px;
     width: 708px;
 
     font-size: 60px;
@@ -130,11 +140,15 @@
 
   .story__description {
     margin: 0 auto;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
     width: 708px;
 
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .story__transfer {
+    display: block;
   }
 
   .story__stats {
@@ -144,7 +158,7 @@
     align-items: center;
 
     margin: 0 auto;
-    margin-bottom: 255px;
+    margin-bottom: 253px;
     width: 708px;
   }
 
@@ -158,10 +172,10 @@
 
   .story__stats-item {
     margin-bottom: 0;
-    width: 162px;
+    width: 158px;
 
     &:nth-child(2n) {
-      margin-left: 42px;
+      margin-left: 40px;
     }
   }
 
@@ -173,9 +187,6 @@
   }
 
   .story__stats-description {
-    bottom: -5px;
-    left: 5%;
-
     padding: 0 5px;
     width: auto;
 
@@ -193,7 +204,13 @@
   }
 
   .story__costs-description {
+    display: inline-block;
+
+    margin-top: -1px;
+    margin-left: 3px;
     margin-bottom: 0;
+
+    text-align: right;
   }
 
   .story__costs-value {
@@ -203,7 +220,7 @@
   }
 
   .story__range-block {
-    padding-bottom: 70px;
+    padding-bottom: 166px;
 
     background-color: #eaeaea;
   }
@@ -245,7 +262,12 @@
 
   .story__description {
     margin-bottom: 69px;
+    padding: 0;
     width: auto;
+  }
+
+  .story__transfer {
+    display: none;
   }
 
   .story__stats {
@@ -254,7 +276,13 @@
   }
 
   .story__stats-list {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+  }
+
+  .story__stats-item {
+    &:nth-child(2n) {
+      margin-left: 44px;
+    }
   }
 
   .story__stats-description {
@@ -271,10 +299,12 @@
   .story__costs-value {
     display: inline-block;
 
-    margin-left: 63px;
+    margin-left: 58px;
   }
 
   .story__range-block {
+    padding-bottom: 20px;
+
     background-color: transparent;
   }
 }

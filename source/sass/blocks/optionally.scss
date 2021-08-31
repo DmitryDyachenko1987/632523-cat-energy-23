@@ -1,37 +1,167 @@
 .optionally {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
   border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    height: 1px;
+    width: 100%;
+    background-color: $green-color;
+    z-index: -1;
+  }
+}
+
+.optionally__container {
+  margin: 0 20px;
 }
 
 .optionally__title {
-  margin-bottom: 34px;
+  position: relative;
+  right: 20px;
+
+  margin: 0;
+  margin-bottom: 35px;
   padding-left: 20px;
+  padding-right: 22px;
 
   color: $black-color;
   font-size: 24px;
   line-height: 26px;
-}
+  font-weight: normal;
 
-.optionally__wrapper {
-  margin: 0 20px;
+  background-color: $white-color;
 }
 
 .optionally__row {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   padding: 5px 0;
 
   &:last-child {
-    margin-bottom: 34px;
+    margin-bottom: 33px;
   }
 }
 
 .optionally__label {
+  position: relative;
+
   padding-left: 46px;
 
   color: $black-color;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+  }
+}
+
+.optionally__input:checked ~ .optionally__label::before {
+  background: url("../../img/icon-tick.svg") no-repeat center;
+  background-size: 21px auto;
+  background-clip: content-box;
+}
+
+.optionally__input:hover ~ .optionally__label::before {
+  border-color: #bababa;
+}
+
+.optionally__input:disabled ~ .optionally__label::before {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .optionally {
+    &::before {
+      top: 20px;
+    }
+  }
+
+  .optionally__container {
+    margin: 0 auto;
+    width: 82%;
+  }
+
+  .optionally__title {
+    right: 40px;
+
+    margin-bottom: 56px;
+    padding: 0 40px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .optionally__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 21px;
+    width: 100%;
+  }
+
+  .optionally__row {
+    margin-right: 105px;
+    margin-bottom: 32px;
+    width: 240px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .optionally__label {
+    padding-left: 60px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      top: -5px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .optionally {
+    &::before {
+      top: 23px
+    }
+  }
+
+  .optionally__container {
+    width: 1220px;
+  }
+
+  .optionally__wrapper {
+    justify-content: space-between;
+
+    margin-bottom: 62px;
+  }
+
+  .optionally__row {
+    margin: 0;
+    width: 245px;
+  }
 }

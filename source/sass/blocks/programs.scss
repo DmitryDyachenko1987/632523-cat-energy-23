@@ -9,8 +9,8 @@
 }
 
 .programs__item {
-  padding: 30px 20px 22px 20px;
-  margin-bottom: 20px;
+  padding: 30px 20px 0 20px;
+  margin-bottom: 19px;
 
   background-color: #f2f2f2;
 
@@ -22,7 +22,7 @@
 .programs__title {
   margin: 0;
   margin-bottom: 29px;
-  padding-left: 69px;
+  padding-left: 70px;
 
   color: $black-color;
   font-size: 24px;
@@ -42,6 +42,8 @@
 }
 
 .programs__link {
+  position: relative;
+
   display: block;
 
   padding-top: 19px;
@@ -52,13 +54,17 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .programs__list {
     margin: 0 auto;
     margin-bottom: 45px;
-    width: 708px;
+    width: 92%;
   }
 
   .programs__item {
@@ -102,12 +108,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    margin-bottom: 68px;
     width: 1220px;
   }
 
   .programs__item {
     margin-bottom: 0;
-    padding: 77px 52px 59px;
+    padding: 77px 48px 59px 52px;
   }
 
   .programs__title {

@@ -1,9 +1,11 @@
 .page__body {
+  margin: 0;
+  padding: 0;
   min-width: 320px;
 
   color: $light-grey-color;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -11,7 +13,7 @@
 
 .page__title {
   margin: 0;
-  padding: 27px 20px 41px;
+  padding: 30px 20px 40px;
 
   color: $black-color;
   font-size: 36px;
@@ -19,4 +21,23 @@
   font-weight: 400;
 
   border-bottom: 1px solid #ebebeb;
+}
+
+@media (min-width: $tablet-width) {
+  .page__title {
+    margin: 0 auto;
+    margin-bottom: 125px;
+    width: 708px;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__title {
+    width: 1220px;
+  }
 }

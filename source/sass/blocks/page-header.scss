@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   align-items: center;
 
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,7 +19,8 @@
 
     width: 92%;
     margin: 0 auto;
-    padding: 24px 0 20px;
+    margin-bottom: 5px;
+    padding: 35px 0 0;
   }
 
   .page-header__wrapper {
@@ -28,10 +29,13 @@
 
   .page-header__logo-wrapper {
     padding: 0;
+    width: 174px;
   }
 
   @media (min-width: $desktop-width) {
     .page-header {
+      margin-bottom: 23px;
+      padding-top: 65px;
       width: 1220px;
     }
   }
