@@ -12,7 +12,7 @@
 
 .contacts__title {
   margin: 0;
-  width: 140px;
+  width: 130px;
 
   color: #111111;
 
@@ -40,7 +40,7 @@
   }
 
   .contacts__block-wrapper {
-    padding: 62px 0 58px;
+    padding: 65px 0 58px;
     width: 626px;
   }
 
@@ -48,7 +48,7 @@
     width: 171px;
 
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
   }
 
   .contacts__adress {
@@ -57,6 +57,12 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  .contacts__city {
+    display: block;
+
+    margin-top: 18px;
   }
 }
 
@@ -72,8 +78,13 @@
     position: absolute;
     top: 95px;
 
-    padding: 62px 76px 58px;
+    padding: 65px 86px 58px 76px;
+    width: 410px;
 
     background-color: $white-color;
+  }
+
+  .contacts__adress {
+    text-align: left;
   }
 }

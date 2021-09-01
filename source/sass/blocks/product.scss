@@ -2,7 +2,7 @@
   position: relative;
 
   margin: 0 auto;
-  padding: 19px 20px 25px;
+  padding: 19px 20px 24px;
 
   border-bottom: 1px solid #ebebeb;
 }
@@ -14,18 +14,84 @@
 }
 
 .product__image-link {
-  padding: 20px 36px 10px;
-  width: 80px;
+  position: relative;
+
+  padding: 0 36px 10px;
+  width: 70px;
+
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+  }
+}
+
+.product__image {
+  position: absolute;
+
+  &--chicken-small {
+    bottom: -32px;
+
+    width: 68px;
+    height: 86px;
+  }
+
+  &--chicken-big {
+    bottom: -44px;
+    right: 25px;
+
+    width: 84px;
+    height: 101px;
+  }
+
+  &--fish-small {
+    bottom: -37px;
+
+    width: 68px;
+    height: 78px;
+  }
+
+  &--fish-big {
+    bottom: -44px;
+    right: 26px;
+
+    width: 84px;
+    height: 101px;
+  }
+
+  &--buckwheat-small {
+    bottom: -40px;
+
+    width: 68px;
+    height: 78px;
+  }
+
+  &--buckwheat-big {
+    bottom: -43px;
+    right: 26px;
+
+    width: 84px;
+    height: 100px;
+  }
+
+  &--rice-small {
+    bottom: -39px;
+    right: 32px;
+
+    width: 72px;
+    height: 84px;
+  }
 }
 
 .product__info {
-  margin-bottom: 22px;
-  width: 140px;
+  margin-bottom: 20px;
+  width: 150px;
 }
 
 .product__title {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
   width: 80px;
 
   color: $grey-color;
@@ -42,7 +108,7 @@
 .product__table {
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
 
   width: 100%;
 }
@@ -63,7 +129,7 @@
 
 @media (min-width: $tablet-width) {
   .product {
-    padding: 161px 37px 39px 39px;
+    padding: 163px 40px 40px 40px;
     width: 324px;
 
     background-color: #f2f2f2;
@@ -95,7 +161,7 @@
 
   .product__title {
     margin: 0 auto;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     width: 174px;
 
     font-size: 20px;
@@ -112,7 +178,7 @@
   }
 
   .product__table-row {
-    padding: 7px 0 9px;
+    padding: 7px 0 7px;
     width: 248px;
 
     border-bottom: 1px solid #cdcdcd;

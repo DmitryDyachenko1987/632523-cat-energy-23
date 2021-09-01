@@ -1,6 +1,6 @@
 .data {
   margin: 0;
-  padding: 0 20px 24px;
+  padding: 0 20px 22px;
 
   font-size: 16px;
   line-height: 18px;
@@ -18,8 +18,7 @@
   display: flex;
   align-items: center;
 
-  width: 280px;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 
   &:last-child {
     margin-bottom: 0;
@@ -27,17 +26,63 @@
 }
 
 .data__label {
-  margin-right: 10px;
+  margin-right: 13px;
 
   text-transform: uppercase;
 }
 
 .data__input {
-  flex-grow: 2;
+  flex-grow: 1;
 
   padding: 13px 15px;
 
   border: 1px solid #e7e7e7;
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: $light-grey-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .data {
+    margin: 0 auto;
+    margin-bottom: 72px;
+    padding: 0;
+    width: 82%;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    border: none;
+  }
+
+  .data__row {
+    margin-bottom: 20px;
+  }
+
+  .data__label {
+    margin-right: 17px;
+  }
+
+  .data__input {
+    padding: 13px 20px 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data {
+    margin: 0;
+    padding: 0;
+    width: 570px;
+  }
 }
 
 @media (min-width: $tablet-width) {

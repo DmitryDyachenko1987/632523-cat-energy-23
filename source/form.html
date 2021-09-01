@@ -9,28 +9,30 @@
   <body class="page__body">
     <!-- Шапка сайта -->
     <header class="page-header">
-      <div class="page-header__logo-wrapper">
-        <a class="page-header__logo" href="#">
-          <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
-        </a>
-        <a class="page-header__logo-sign" href="#">
-          <img src="img/header-logo.png" width="101" height="18" alt="Cat Energy">
-        </a>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo" href="#">
+            <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
+          </a>
+          <a class="page-header__logo-sign" href="#">
+            <img src="img/header-logo.png" width="101" height="18" alt="Cat Energy">
+          </a>
+        </div>
       </div>
       <!-- Основная навигация -->
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link" href="#">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="form.html">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--current" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -46,46 +48,42 @@
         <!-- Основная информация о коте -->
         <div class="form__wrapper">
           <fieldset class="form__fieldset data">
-            <div class="data__wrapper">
-              <legend class="visually-hiiden">Основные информация о коте</legend>
-              <div class="data__row">
-                <label class="data__label" for="cat-name">Имя:*</label>
-                <input class="data__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
-              </div>
-              <div class="data__row">
-                <label class="data__label" for="cat-weight">Вес (кг):*</label>
-                <input class="data__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
-              </div>
-              <div class="data__row">
-                <label class="data__label" for="cat-age">Возраст (лет):</label>
-                <input class="data__input" type="text" name="cat-age" id="cat-age" placeholder="7">
-              </div>
+            <legend class="visually-hidden">Основные информация о коте</legend>
+            <div class="data__row">
+              <label class="data__label" for="cat-name">Имя:*</label>
+              <input class="data__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+            </div>
+            <div class="data__row">
+              <label class="data__label" for="cat-weight">Вес (кг):*</label>
+              <input class="data__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+            </div>
+            <div class="data__row">
+              <label class="data__label" for="cat-age">Возраст (лет):</label>
+              <input class="data__input" type="text" name="cat-age" id="cat-age" placeholder="7">
             </div>
           </fieldset>
           <!-- Выбор программы -->
           <fieldset class="form__fieldset program">
-            <div class="program__wrapper">
-              <legend class="visually-hiiden">Выбор программы питания</legend>
-              <div class="program__row">
-                <input class="program__input" type="radio" name="program" value="weight-loss" id="weight-loss" checked>
-                <label class="program__label" for="weight-loss">Похудение</label>
-              </div>
-              <div class="program__row">
-                <input class="program__input" type="radio" name="program" value="weight-add" id="weight-add">
-                <label class="program__label" for="weight-add">Набор массы</label>
-              </div>
-              <div class="program__row">
-                <input class="program__input" type="radio" name="program" value="advice" id="advice">
-                <label class="program__label" for="advice">Не знаю (нужен совет)</label>
-              </div>
+            <legend class="visually-hidden">Выбор программы питания</legend>
+            <div class="program__row">
+              <input class="program__input visually-hidden" type="radio" name="program" value="weight-loss" id="weight-loss" checked>
+              <label class="program__label" for="weight-loss">Похудение</label>
+            </div>
+            <div class="program__row">
+              <input class="program__input visually-hidden" type="radio" name="program" value="weight-add" id="weight-add">
+              <label class="program__label" for="weight-add">Набор массы</label>
+            </div>
+            <div class="program__row">
+              <input class="program__input visually-hidden" type="radio" name="program" value="advice" id="advice">
+              <label class="program__label" for="advice">Не знаю (нужен ваш совет)</label>
             </div>
           </fieldset>
         </div>
         <!-- Контактные данные -->
         <fieldset class="form__fieldset form-contacts">
-          <div class="form-contacts__wrapper">
-            <legend class="form-contacts__title">Контактные данные (владельца кота)</legend>
-            <div class="form-contacts__row-wrapper">
+          <div class="form-contacts__container">
+            <legend><h2 class="form-contacts__title">Контактные данные (владельца кота)</h2></legend>
+            <div class="form-contacts__wrapper">
               <div class="form-contacts__row">
                 <label class="form-contacts__label" for="owner-email">E-mail:*</label>
                 <input class="form-contacts__input" type="email" name="owner-email" id="owner-email" placeholder="кuklachev@gmail.com" required>
@@ -99,9 +97,9 @@
         </fieldset>
         <!-- Поле для комментария -->
         <div class="form__comment comment">
-          <div class="comment__wrapper">
+          <div class="comment__container">
             <h2 class="comment__title">Комментарий</h2>
-            <div class="comment__field-wrapper">
+            <div class="comment__wrapper">
               <label class="visually-hidden" for="owner-comment">Введите коментарий</label>
               <textarea class="comment__textarea" name="owner-comment" id="owner-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
@@ -109,23 +107,23 @@
         </div>
         <!-- Дополнительные опции -->
         <fieldset class="form__fieldset optionally">
-          <div class="optionally__wrapper">
-            <legend class="optionally__title">Дополнительно</legend>
-            <div class="optionally__row-wrapper">
+          <div class="optionally__container">
+            <legend><h2 class="optionally__title">Дополнительно</h2></legend>
+            <div class="optionally__wrapper">
               <div class="optionally__row">
-                <input class="optionally__input" type="checkbox" name="add-option" value="sweetener" id="sweetener" checked>
+                <input class="optionally__input visually-hidden" type="checkbox" name="add-option" value="sweetener" id="sweetener" checked>
                 <label class="optionally__label" for="sweetener">Сахарозаменитель</label>
               </div>
               <div class="optionally__row">
-                <input class="optionally__input" type="checkbox" name="add-option" value="watter" id="watter">
+                <input class="optionally__input visually-hidden" type="checkbox" name="add-option" value="watter" id="watter">
                 <label class="optionally__label" for="watter">Питьевая вода</label>
               </div>
               <div class="optionally__row">
-                <input class="optionally__input" type="checkbox" name="add-option" value="milk" id="milk">
+                <input class="optionally__input visually-hidden" type="checkbox" name="add-option" value="milk" id="milk">
                 <label class="optionally__label" for="milk">Молоко</label>
               </div>
               <div class="optionally__row">
-                <input class="optionally__input" type="checkbox" name="add-option" value="vitamins" id="vitamins">
+                <input class="optionally__input visually-hidden" type="checkbox" name="add-option" value="vitamins" id="vitamins">
                 <label class="optionally__label" for="vitamins">Витамины</label>
               </div>
             </div>
@@ -144,9 +142,9 @@
     <footer class="page-footer">
       <!-- Блок контактов -->
       <section class="page-footer__contacts page-footer__contacts--inner contacts">
-        <div class="contacts__wrapper contacts__wrapper--inner">
+        <div class="contacts__wrapper">
           <div class="contacts__block-wrapper">
-            <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <h2 class="contacts__title">Приглашаем<br class="contacts__transfer"> к сотрудничеству дилеров!</h2>
             <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
           </div>
         </div>
@@ -190,5 +188,22 @@
         </div>
       </div>
     </footer>
+    <!-- Скрипты -->
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+  </script>
   </body>
 </html>

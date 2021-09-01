@@ -1,24 +1,41 @@
-.page-header__logo-wrapper {
+.page-header__wrapper {
   border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__logo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding: 12px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
 
-    width: 708px;
+    width: 92%;
     margin: 0 auto;
-    padding: 24px 0 20px;
+    margin-bottom: 5px;
+    padding: 35px 0 0;
+  }
+
+  .page-header__wrapper {
+    border: none;
   }
 
   .page-header__logo-wrapper {
-    border: none;
+    padding: 0;
+    width: 174px;
   }
 
   @media (min-width: $desktop-width) {
     .page-header {
+      margin-bottom: 23px;
+      padding-top: 65px;
       width: 1220px;
     }
   }
