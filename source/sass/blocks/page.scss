@@ -29,9 +29,8 @@
 
 @media (min-width: $tablet-width) {
   .page__title {
-    margin: 0 auto;
-    margin-bottom: 125px;
-    width: 708px;
+    margin: 34px auto 125px;
+    width: 92%;
 
     font-size: 60px;
     line-height: 60px;
@@ -42,6 +41,7 @@
 
 @media (min-width: $desktop-width) {
   .page__title {
+    margin-top: 53px;
     width: 1220px;
   }
 }

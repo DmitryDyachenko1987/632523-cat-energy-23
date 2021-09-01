@@ -77,9 +77,8 @@
   }
 
   .promo__title {
-    margin: 0;
+    margin: 64px 0 41px;
     padding: 0;
-    margin-bottom: 41px;
     width: 440px;
 
     color: $black-color;
@@ -115,7 +114,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding-bottom: 248px
+    padding-bottom: 245px;
   }
 
   .promo__wrapper {
@@ -127,7 +126,12 @@
     margin-left: 80px;
   }
 
+  .promo__title {
+    margin-top: 117px;
+  }
+
   .promo__link {
+    padding-top: 18px;
     margin-left: 80px;
   }
 }

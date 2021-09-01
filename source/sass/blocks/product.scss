@@ -129,7 +129,7 @@
 
 @media (min-width: $tablet-width) {
   .product {
-    padding: 163px 40px 40px 40px;
+    padding: 163px 38px 38px 38px;
     width: 324px;
 
     background-color: #f2f2f2;
@@ -161,7 +161,7 @@
 
   .product__title {
     margin: 0 auto;
-    margin-bottom: 16px;
+    margin-bottom: 11px;
     width: 174px;
 
     font-size: 20px;
@@ -196,6 +196,7 @@
 
   .product__title {
     line-height: 21px;
+    margin-bottom: 18px;
   }
 
   .product__table-row {

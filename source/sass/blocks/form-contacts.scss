@@ -80,7 +80,7 @@
     padding-bottom: 65px;
 
     &::before {
-      top: 50px;
+      top: 49px;
     }
   }
 
@@ -144,36 +144,6 @@
   .form-contacts__row {
     margin-bottom: 0;
     width: 570px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .form-contacts {
-    padding-bottom: 65px;
-
-    &::before {
-      top: 20px;
-    }
-  }
-
-  .form-contacts__wrapper {
-    width: 630px;
-  }
-
-  .form-contacts__title {
-    right: 40px;
-
-    margin-bottom: 76px;
-    padding: 0 40px;
-    width: auto;
-
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .form-contacts__label {
-    font-size: 20px;
-    line-height: 30px;
   }
 }
 

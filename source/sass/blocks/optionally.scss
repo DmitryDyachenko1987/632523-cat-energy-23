@@ -147,7 +147,7 @@
 @media (min-width: $desktop-width) {
   .optionally {
     &::before {
-      top: 23px
+      top: 23px;
     }
   }
 
@@ -164,47 +164,5 @@
   .optionally__row {
     margin: 0;
     width: 245px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .optionally {
-    &::before {
-      top: 20px;
-    }
-  }
-
-  .optionally__wrapper {
-    width: 630px;
-  }
-
-  .optionally__title {
-    right: 40px;
-
-    margin-bottom: 55px;
-    padding: 0 40px;
-
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .optionally__row-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .optionally__row {
-    width: 304px;
-  }
-
-  .optionally__label {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .optionally__wrapper {
-    width: 1220px;
   }
 }
