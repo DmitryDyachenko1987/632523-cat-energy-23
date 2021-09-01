@@ -6,9 +6,26 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 
-  padding: 12px 20px;
+  padding: 11px 20px;
+  width: 60%;
 }
+
+.page-header__logo-image {
+  margin-right: auto;
+}
+
+.page-header__logo-icon {
+  width: 33px;
+  height: 37px;
+}
+
+.page-header__logo-sign {
+  width: 101px;
+  height: 18px;
+}
+
 
 @media (min-width: $tablet-width) {
   .page-header {
