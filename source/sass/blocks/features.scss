@@ -18,10 +18,67 @@
 }
 
 .features__item {
+  position: relative;
+
+  max-width: 320px;
   margin-bottom: 26px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    width: 60px;
+    height: 60px;
+    background-color: $green-color;
+    background-repeat: no-repeat;
+  }
+
+  &--eco {
+    &::before {
+      background-image: url("../../img/eco.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/eco@2x.png");
+        background-size: cover;
+      }
+    }
+  }
+
+  &--powder {
+    &::before {
+      background-image: url("../../img/powder.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/powder@2x.png");
+        background-size: cover;
+      }
+    }
+  }
+
+  &--eating {
+    &::before {
+      background-image: url("../../img/eating.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/eating@2x.png");
+        background-size: cover;
+      }
+    }
+  }
+
+  &--time {
+    &::before {
+      background-image: url("../../img/time.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/time@2x.png");
+        background-size: cover;
+      }
+    }
   }
 }
 
@@ -67,6 +124,71 @@
 
     margin-bottom: 0;
 
+    &::before {
+      top: 40px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &--eco {
+      &::before {
+        background-image: url("../../img/eco-tablet.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../../img/eco-tablet@2x.png");
+        }
+      }
+
+      &::after {
+        content: "1";
+      }
+    }
+
+    &--powder {
+      &::before {
+        background-image: url("../../img/powder-tablet.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../../img/powder-tablet@2x.png");
+        }
+      }
+
+      &::after {
+        content: "2";
+        right: 5px;
+      }
+    }
+
+    &--eating {
+      &::before {
+        background-image: url("../../img/eating-tablet.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../../img/eating-tablet@2x.png");
+        }
+      }
+
+      &::after {
+        content: "3";
+        right: 5px;
+      }
+    }
+
+    &--time {
+      &::before {
+        background-image: url("../../img/time-tablet.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../../img/time-tablet@2x.png");
+        }
+      }
+
+      &::after {
+        content: "4";
+        right: 3px;
+      }
+    }
+
     &--eco,
     &--powder,
     &--eating,
@@ -80,33 +202,6 @@
         color: #f2f2f2;
         font-size: 280px;
         line-height: 280px;
-      }
-    }
-
-    &--eco {
-      &::after {
-        content: "1";
-      }
-    }
-
-    &--powder {
-      &::after {
-        content: "2";
-        right: 5px;
-      }
-    }
-
-    &--eating {
-      &::after {
-        content: "3";
-        right: 5px;
-      }
-    }
-
-    &--time {
-      &::after {
-        content: "4";
-        right: 3px;
       }
     }
   }

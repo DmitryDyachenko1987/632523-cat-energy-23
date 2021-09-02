@@ -10,6 +10,11 @@
 
   padding: 11px 20px;
   width: 60%;
+
+  &--inner {
+    padding-top: 10px;
+    padding-bottom: 14px;
+  }
 }
 
 .page-header__logo-image {
@@ -37,7 +42,7 @@
     width: 92%;
     margin: 0 auto;
     margin-bottom: 5px;
-    padding: 35px 0 0;
+    padding: 26px 0 0;
   }
 
   .page-header__wrapper {
@@ -49,11 +54,29 @@
     width: 174px;
   }
 
+  .page-header__logo-icon {
+    width: 174px;
+    height: 52px;
+  }
+
+  .page-header__sign {
+    display: none;
+  }
+
   @media (min-width: $desktop-width) {
     .page-header {
       margin-bottom: 23px;
-      padding-top: 65px;
+      padding-top: 55px;
       width: 1220px;
+    }
+
+    .page-header__logo-wrapper {
+      width: 202px;
+    }
+
+    .page-header__logo-icon {
+      width: 202px;
+      height: 59px;
     }
   }
 }

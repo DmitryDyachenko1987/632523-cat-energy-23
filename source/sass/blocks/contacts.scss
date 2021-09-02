@@ -32,6 +32,10 @@
 
 .contacts__map-image {
   display: block;
+
+  margin: 0 auto;
+  width: 320px;
+  height: 362px;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,6 +68,11 @@
 
     margin-top: 18px;
   }
+
+  .contacts__map-image {
+    width: 768px;
+    height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -86,5 +95,9 @@
 
   .contacts__adress {
     text-align: left;
+  }
+
+  .contacts__map-image {
+    width: 1440px;
   }
 }

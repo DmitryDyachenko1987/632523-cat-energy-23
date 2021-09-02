@@ -9,6 +9,8 @@
 }
 
 .programs__item {
+  position: relative;
+
   padding: 30px 20px 0 20px;
   margin-bottom: 19px;
 
@@ -16,6 +18,42 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--slim {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 22px;
+      width: 50px;
+      height: 53px;
+      background-image: url("../../img/cat_back-slim.png");
+      background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/cat_back-slim@2x.png");
+        background-size: cover;
+      }
+    }
+  }
+
+  &--pro {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 14px;
+      width: 67px;
+      height: 50px;
+      background-image: url("../../img/cat_back-pro.png");
+      background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/cat_back-pro@2x.png");
+        background-size: cover;
+      }
+    }
   }
 }
 
@@ -72,6 +110,34 @@
     padding-top: 77px;
     padding-left: 52px;
     padding-bottom: 57px;
+
+    &--slim {
+      &::before {
+        top: 82px;
+        left: 445px;
+        width: 200px;
+        height: 211px;
+        background-image: url("../../img/cat_back-slim-tablet.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../../img/cat_back-slim-tablet@2x.png");
+        }
+      }
+    }
+
+    &--pro {
+      &::before {
+        top: 91px;
+        left: 410px;
+        width: 268px;
+        height: 200px;
+        background-image: url("../../img/cat_back-pro-tablet.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../../img/cat_back-pro-tablet@2x.png");
+        }
+      }
+    }
   }
 
   .programs__title {
@@ -115,6 +181,34 @@
   .programs__item {
     margin-bottom: 0;
     padding: 77px 48px 59px 52px;
+
+    &--slim {
+      &::before {
+        top: 40px;
+        left: 53px;
+        width: 100px;
+        height: 106px;
+        background-image: url("../../img/cat_back-slim-desktop.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../../img/cat_back-slim-desktop@2x.png");
+        }
+      }
+    }
+
+    &--pro {
+      &::before {
+        top: 48px;
+        left: 34px;
+        width: 134px;
+        height: 100px;
+        background-image: url("../../img/cat_back-pro-desktop.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../../img/cat_back-pro-desktop@2x.png");
+        }
+      }
+    }
   }
 
   .programs__title {
