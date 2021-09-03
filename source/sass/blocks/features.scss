@@ -130,6 +130,22 @@
       height: 80px;
     }
 
+    &--eco,
+    &--powder,
+    &--eating,
+    &--time {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 20px;
+        top: 0;
+        z-index: -1;
+        color: #f2f2f2;
+        font-size: 280px;
+        line-height: 280px;
+      }
+    }
+
     &--eco {
       &::before {
         background-image: url("../../img/eco-tablet.png");
@@ -189,21 +205,21 @@
       }
     }
 
-    &--eco,
-    &--powder,
-    &--eating,
-    &--time {
-      &::after {
-        content: "";
-        position: absolute;
-        right: 20px;
-        top: 0;
-        z-index: -1;
-        color: #f2f2f2;
-        font-size: 280px;
-        line-height: 280px;
-      }
-    }
+    // &--eco,
+    // &--powder,
+    // &--eating,
+    // &--time {
+    //   &::after {
+    //     content: "";
+    //     position: absolute;
+    //     right: 20px;
+    //     top: 0;
+    //     z-index: -1;
+    //     color: #f2f2f2;
+    //     font-size: 280px;
+    //     line-height: 280px;
+    //   }
+    // }
   }
 
   .features__description {
