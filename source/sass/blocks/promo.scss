@@ -5,16 +5,35 @@
 }
 
 .promo__text-wrapper {
+  position: relative;
+
   margin-bottom: 135px;
 
+  background-color: $green-color;
   background-image: url("../../img/cat-background-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/cat-background-image@2x.jpg");
+  }
+}
+
+.promo__overlay {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
   background-color: rgba($green-color, 0.85);
+  z-index: 0;
 }
 
 .promo__title {
+  position: relative;
+  z-index: 1;
+
   margin: 0 auto;
   margin-bottom: 27px;
   padding: 27px 20px 0;
@@ -27,6 +46,9 @@
 }
 
 .promo__slogan {
+  position: relative;
+  z-index: 1;
+
   margin: 0 auto;
   padding-bottom: 165px;
 
@@ -76,8 +98,12 @@
     background-color: transparent;
   }
 
+  .promo__overlay {
+    display: none;
+  }
+
   .promo__title {
-    margin: 64px 0 41px;
+    margin: 58px 0 41px;
     padding: 0;
     width: 440px;
 
@@ -98,7 +124,11 @@
   }
 
   .promo__image {
+    bottom: -22px;
     z-index: -1;
+
+    width: 709px;
+    height: 609px;
   }
 
   .promo__link {
@@ -127,7 +157,15 @@
   }
 
   .promo__title {
-    margin-top: 117px;
+    margin-top: 105px;
+  }
+
+  .promo__image {
+    left: 225px;
+    bottom: 115px;
+
+    width: 552px;
+    height: 499px;
   }
 
   .promo__link {

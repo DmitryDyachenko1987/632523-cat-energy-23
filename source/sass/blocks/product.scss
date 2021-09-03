@@ -151,7 +151,65 @@
   .product__image-link {
     position: absolute;
 
-    top: -50px;
+    top: 117px;
+  }
+
+  .product__image {
+    &--chicken-small {
+      bottom: 0;
+      left: 44px;
+
+      width: 161px;
+      height: 172px;
+    }
+
+    &--chicken-big {
+      bottom: -7px;
+      left: 40px;
+
+      width: 168px;
+      height: 207px;
+    }
+
+    &--fish-small {
+      bottom: 0;
+      left: 43px;
+
+      width: 163px;
+      height: 174px;
+    }
+
+    &--fish-big {
+      bottom: 0;
+      left: 40px;
+
+      width: 168px;
+      height: 200px;
+    }
+
+    &--buckwheat-small {
+      bottom: 0;
+      left: 44px;
+
+      width: 161px;
+      height: 171px;
+    }
+
+    &--buckwheat-big {
+      bottom: 0;
+      left: 40px;
+
+      width: 168px;
+      height: 200px;
+    }
+
+    &--rice-small {
+      bottom: 0;
+      left: 43px;
+
+      width: 163px;
+      height: 174px;
+    }
   }
 
   .product__info {
@@ -192,6 +250,54 @@
 
   .product__wrapper {
     width: 168px;
+  }
+
+  .product__image-link {
+    top: 110px;
+  }
+
+  .product__image {
+    &--chicken-small {
+      bottom: 0;
+      left: 4px;
+    }
+
+    &--chicken-big {
+      bottom: -2px;
+      left: 0;
+
+      width: 172px;
+      height: 202px;
+    }
+
+    &--fish-small {
+      bottom: 0;
+      left: 5px;
+    }
+
+    &--fish-big {
+      bottom: 5px;
+      left: 0;
+      width: 172px;
+      height: 196px;
+    }
+
+    &--buckwheat-small {
+      bottom: 0;
+      left: 5px;
+    }
+
+    &--buckwheat-big {
+      bottom: 3px;
+      left: 0;
+      width: 172px;
+      height: 196px;
+    }
+
+    &--rice-small {
+      bottom: 0;
+      left: 5px;
+    }
   }
 
   .product__title {

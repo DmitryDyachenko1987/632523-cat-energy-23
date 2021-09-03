@@ -17,7 +17,7 @@
 
 .page__title {
   margin: 0;
-  padding: 30px 20px 40px;
+  padding: 28px 20px 40px;
 
   color: $black-color;
   font-size: 36px;
@@ -29,7 +29,7 @@
 
 @media (min-width: $tablet-width) {
   .page__title {
-    margin: 34px auto 125px;
+    margin: 32px auto 123px;
     width: 92%;
 
     font-size: 60px;
@@ -41,7 +41,7 @@
 
 @media (min-width: $desktop-width) {
   .page__title {
-    margin-top: 53px;
+    margin-top: 45px;
     width: 1220px;
   }
 }
