@@ -39,10 +39,10 @@
 
   &--eco {
     &::before {
-      background-image: url("../../img/eco.png");
+      background-image: url("../img/eco.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/eco@2x.png");
+        background-image: url("../img/eco@2x.png");
         background-size: cover;
       }
     }
@@ -50,10 +50,10 @@
 
   &--powder {
     &::before {
-      background-image: url("../../img/powder.png");
+      background-image: url("../img/powder.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/powder@2x.png");
+        background-image: url("../img/powder@2x.png");
         background-size: cover;
       }
     }
@@ -61,10 +61,10 @@
 
   &--eating {
     &::before {
-      background-image: url("../../img/eating.png");
+      background-image: url("../img/eating.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/eating@2x.png");
+        background-image: url("../img/eating@2x.png");
         background-size: cover;
       }
     }
@@ -72,10 +72,10 @@
 
   &--time {
     &::before {
-      background-image: url("../../img/time.png");
+      background-image: url("../img/time.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/time@2x.png");
+        background-image: url("../img/time@2x.png");
         background-size: cover;
       }
     }
@@ -148,10 +148,10 @@
 
     &--eco {
       &::before {
-        background-image: url("../../img/eco-tablet.png");
+        background-image: url("../img/eco-tablet.png");
 
         @media (min-resolution: 2dppx) {
-          background-image: url("../../img/eco-tablet@2x.png");
+          background-image: url("../img/eco-tablet@2x.png");
         }
       }
 
@@ -162,10 +162,10 @@
 
     &--powder {
       &::before {
-        background-image: url("../../img/powder-tablet.png");
+        background-image: url("../img/powder-tablet.png");
 
         @media (min-resolution: 2dppx) {
-          background-image: url("../../img/powder-tablet@2x.png");
+          background-image: url("../img/powder-tablet@2x.png");
         }
       }
 
@@ -177,10 +177,10 @@
 
     &--eating {
       &::before {
-        background-image: url("../../img/eating-tablet.png");
+        background-image: url("../img/eating-tablet.png");
 
         @media (min-resolution: 2dppx) {
-          background-image: url("../../img/eating-tablet@2x.png");
+          background-image: url("../img/eating-tablet@2x.png");
         }
       }
 
@@ -192,10 +192,10 @@
 
     &--time {
       &::before {
-        background-image: url("../../img/time-tablet.png");
+        background-image: url("../img/time-tablet.png");
 
         @media (min-resolution: 2dppx) {
-          background-image: url("../../img/time-tablet@2x.png");
+          background-image: url("../img/time-tablet@2x.png");
         }
       }
 
@@ -204,22 +204,6 @@
         right: 3px;
       }
     }
-
-    // &--eco,
-    // &--powder,
-    // &--eating,
-    // &--time {
-    //   &::after {
-    //     content: "";
-    //     position: absolute;
-    //     right: 20px;
-    //     top: 0;
-    //     z-index: -1;
-    //     color: #f2f2f2;
-    //     font-size: 280px;
-    //     line-height: 280px;
-    //   }
-    // }
   }
 
   .features__description {

@@ -107,6 +107,12 @@
   &:active {
     opacity: 0.3;
   }
+
+  &--current {
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -151,7 +157,20 @@
   }
 
   .main-nav__link {
+    color: $white-color;
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      background-color: $white-color;
+    }
+
+    &--inner {
+      color: $black-color;
+
+      &::after {
+        background-color: $green-color;
+      }
+    }
   }
 }
