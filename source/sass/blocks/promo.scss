@@ -10,13 +10,13 @@
   margin-bottom: 135px;
 
   background-color: $green-color;
-  background-image: url("../../img/cat-background-image.jpg");
+  background-image: url("../img/cat-background-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/cat-background-image@2x.jpg");
+    background-image: url("../img/cat-background-image@2x.jpg");
   }
 }
 
@@ -83,8 +83,6 @@
 @media (min-width: $tablet-width) {
   .promo {
     padding-bottom: 505px;
-
-    background-color: $white-color;
 
     z-index: 1;
   }
