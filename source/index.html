@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="../favicon.ico">
-    <link rel="icon" href="img/favicons/android-icon-144x144.png">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
-    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body page__body--index">
     <!-- Шапка сайта -->
@@ -57,6 +57,9 @@
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
             <img class="promo__image" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Банка корма Cat Energy">
@@ -72,12 +75,12 @@
             <li class="programs__item programs__item--slim">
               <h2 class="programs__title">Похудение</h2>
               <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="programs__link" href="#">Каталог slim</a>
+              <a class="programs__link" href="catalog.html">Каталог slim</a>
             </li>
             <li class="programs__item programs__item--pro">
               <h2 class="programs__title">Набор массы</h2>
               <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="programs__link" href="#">Каталог pro</a>
+              <a class="programs__link" href="catalog.html">Каталог pro</a>
             </li>
           </ul>
         </div>
@@ -110,7 +113,7 @@
               <div class="story__stats">
                 <ul class="story__stats-list">
                   <li class="story__stats-item">
-                    <p class="story__stats-value">5 кг <span class="story__stats-description">снижение веса</span></p>
+                    <p class="story__stats-value">5 кг <span class="story__stats-description story__stats-description--weight">снижение веса</span></p>
                   </li>
                   <li class="story__stats-item">
                     <p class="story__stats-value">60 дней <span class="story__stats-description">затрачено времени</span></p>
@@ -122,10 +125,22 @@
               </div>
             </div>
             <div class="story__range-block">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
-                <img class="story__range-image story__range-image--before" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Живой пример">
-              </picture>
+              <div class="story__image-block">
+                <div class="story__image story__image--before">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
+                    <img class="story__range-image story__range-image--before" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Живой пример">
+                  </picture>
+                </div>
+                <div class="story__image story__image--after">
+                  <picture>
+                    <source type="image/webp" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
+                    <img class="story__range-image story__range-image--after" src="img/after-tablet.png" srcset="img/after-tablet@2x.png 2x" width="311" height="232" alt="Живой пример">
+                  </picture>
+                </div>
+              </div>
               <div class="story__range">
                 <span class="story__range-text story__range-text--before">Было</span>
                 <div class="story__range-stripe">
@@ -150,11 +165,7 @@
           </div>
         </div>
         <div class="contacts__map-wrapper">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="contacts__map-image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="362" alt="Наш офис на карте">
-          </picture>
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630860256937!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
       <!-- Блок ссылок -->
@@ -194,7 +205,7 @@
             </ul>
           </div>
           <div class="links__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__sign">HTML Academy</span>
               <svg class="copyright__icon" width="27" height="34">
                 <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
@@ -205,21 +216,6 @@
       </div>
     </footer>
     <!-- Скрипты -->
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-  </script>
+    <script src="js/menu-open.min.js"></script>
   </body>
 </html>

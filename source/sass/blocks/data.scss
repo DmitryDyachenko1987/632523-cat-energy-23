@@ -83,29 +83,6 @@
     padding: 0;
     width: 570px;
   }
-}
-
-@media (min-width: $tablet-width) {
-  .data {
-    font-size: 20px;
-    line-height: 30px;
-
-    border: none;
-  }
-
-  .data__wrapper {
-    width: 630px;
-  }
-
-  .data__row {
-    width: 630px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .data {
-    padding: 0;
-  }
 
   .data__wrapper {
     width: 570px;

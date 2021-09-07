@@ -79,8 +79,12 @@
   }
 
   &:focus {
-    border-color: $light-grey-color;
+    border: 2px solid $light-grey-color;
   }
+
+  // &:invalid {
+  //   border: 2px solid #ff8282;
+  // }
 }
 
 .form-contacts__icon {
@@ -102,6 +106,16 @@
     fill: $grey-color;
   }
 }
+
+.form-contacts__input:focus ~ .form-contacts__icon {
+  fill: $green-color;
+  stroke: $green-color;
+}
+
+// .form-contacts__input:invalid + .form-contacts__icon {
+//   fill: #ff8282;
+//   stroke: #ff8282;
+// }
 
 @media (min-width: $tablet-width) {
   .form-contacts {
@@ -185,16 +199,6 @@
     justify-content: space-between;
 
     margin-bottom: 0;
-  }
-
-  .form-contacts__row {
-    margin-bottom: 0;
-    width: 570px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form-contacts__wrapper {
     width: 1220px;
   }
 

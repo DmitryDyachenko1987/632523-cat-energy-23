@@ -97,15 +97,35 @@
     opacity: 0.3;
   }
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     left: 100px;
-    width: 24px;
-    height: 12px;
-    background-image: url("../img/link-arrow.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    top: 25px;
+    width: 18px;
+    height: 2px;
+    background-color: $black-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 118px;
+    top: 20px;
+    border: 6px solid transparent;
+    border-left: 6px solid $black-color;
+  }
+
+  &:hover {
+    &::before {
+      width: 23px;
+      transition-duration: 0.3s;
+    }
+
+    &::after {
+      left: 123px;
+      transition-duration: 0.3s;
+    }
   }
 }
 
@@ -177,9 +197,20 @@
     font-size: 20px;
     line-height: 30px;
 
+    &::before {
+      top: 14px;
+      left: 130px;
+    }
+
     &::after {
       top: 9px;
-      left: 130px;
+      left: 147px;
+    }
+
+    &:hover {
+      &::after {
+        left: 152px;
+      }
     }
   }
 }
@@ -239,7 +270,7 @@
 
   .programs__link {
     &::after {
-      left: 133px;
+      left: 148px;
     }
   }
 }
