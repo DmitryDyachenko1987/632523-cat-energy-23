@@ -112,11 +112,11 @@
 
   .features__list {
     display: grid;
-    grid-template-columns: 250px 250px;
-    gap: 37px 135px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 37px 65px;
 
     margin: 0 auto;
-    width: 708px;
+    width: 92%;
   }
 
   .features__item {
@@ -157,6 +157,7 @@
 
       &::after {
         content: "1";
+        right: 90px;
       }
     }
 
@@ -171,7 +172,7 @@
 
       &::after {
         content: "2";
-        right: 5px;
+        right: 80px;
       }
     }
 
@@ -186,7 +187,7 @@
 
       &::after {
         content: "3";
-        right: 5px;
+        right: 75px;
       }
     }
 
@@ -201,13 +202,13 @@
 
       &::after {
         content: "4";
-        right: 3px;
+        right: 75px;
       }
     }
   }
 
   .features__description {
-    padding: 151px 0 57px 0;
+    padding: 151px 60px 57px 0;
 
     font-size: 16px;
     line-height: 24px;

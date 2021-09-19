@@ -9,7 +9,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 17px;
+    top: -45px;
     height: 1px;
     width: 100%;
     background-color: $green-color;
@@ -23,7 +23,8 @@
 
 .optionally__title {
   position: relative;
-  right: 20px;
+
+  display: inline-block;
 
 
   margin: 0;
@@ -82,18 +83,19 @@
   border-color: #bababa;
 }
 
-.optionally__input:disabled ~ .optionally__label::before {
+.optionally__input:disabled ~ .optionally__label {
   opacity: 0.3;
+  cursor: default;
 }
 
 @media (min-width: $tablet-width) {
   .optionally {
     &::before {
-      top: 20px;
+      top: -70px;
     }
   }
 
-  .optionally__container {
+  .optionally__legend {
     margin: 0 auto;
     width: 82%;
   }
@@ -106,6 +108,11 @@
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .optionally__container {
+    margin: 0 auto;
+    width: 82%;
   }
 
   .optionally__wrapper {
@@ -147,8 +154,12 @@
 @media (min-width: $desktop-width) {
   .optionally {
     &::before {
-      top: 23px;
+      top: -70px;
     }
+  }
+
+  .optionally__legend {
+    width: 1220px;
   }
 
   .optionally__container {

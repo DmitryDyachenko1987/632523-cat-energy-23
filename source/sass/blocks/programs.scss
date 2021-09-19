@@ -25,7 +25,7 @@
       content: "";
       position: absolute;
       top: 20px;
-      left: 22px;
+      margin-left: 2px;
       width: 50px;
       height: 53px;
       background-image: url("../img/cat_back-slim.png");
@@ -43,7 +43,7 @@
       content: "";
       position: absolute;
       top: 24px;
-      left: 14px;
+      margin-left: -8px;
       width: 67px;
       height: 50px;
       background-image: url("../img/cat_back-pro.png");
@@ -116,6 +116,11 @@
     border-left: 6px solid $black-color;
   }
 
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
   &:hover {
     &::before {
       width: 23px;
@@ -144,8 +149,8 @@
 
     &--slim {
       &::before {
-        top: 82px;
-        left: 445px;
+        top: 80px;
+        right: 60px;
         width: 200px;
         height: 211px;
         background-image: url("../img/cat_back-slim-tablet.png");
@@ -159,7 +164,8 @@
     &--pro {
       &::before {
         top: 91px;
-        left: 410px;
+        right: 30px;
+        margin-left: 0;
         width: 268px;
         height: 200px;
         background-image: url("../img/cat_back-pro-tablet.png");
@@ -220,13 +226,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
 
-    margin-bottom: 68px;
+    margin-bottom: 39px;
     width: 1220px;
   }
 
   .programs__item {
-    margin-bottom: 0;
+    // margin-bottom: 0;
     padding: 77px 48px 59px 52px;
 
     &--slim {

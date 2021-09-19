@@ -100,8 +100,10 @@
 
   border-bottom: 1px solid #e6e6e6;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
+    outline: none;
   }
 
   &:active {

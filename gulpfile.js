@@ -10,6 +10,7 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const terser = require("gulp-terser");
 const squoosh = require("gulp-libsquoosh");
+const svgo = require("gulp-svgo");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
@@ -56,20 +57,28 @@ exports.scripts = scripts;
 
 // Images
 
-const optimizeImages = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
-  .pipe(squoosh())
-  .pipe(gulp.dest("build/img"));
-}
-
-exports.optimizeImages = optimizeImages;
-
 const copyImages = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
   .pipe(gulp.dest("build/img"));
 }
 
 exports.copyImages = copyImages;
+
+const optimizeImages = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+  .pipe(squoosh())
+  .pipe(gulp.dest("build/img"));
+}
+
+exports.optimizeImages = optimizeImages;
+
+const optimizeSvg = () => {
+  return gulp.src("source/img/**/*.svg")
+  .pipe(svgo())
+  .pipe(gulp.dest("build/img"));
+}
+
+exports.optimizeSvg = optimizeSvg;
 
 // WebP
 
@@ -102,6 +111,7 @@ const copy = (done) => {
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/**/*.svg",
+    "source/*.webmanifest",
   ], {
     base: "source"
   })
@@ -135,17 +145,20 @@ const server = (done) => {
 
 exports.server = server;
 
+// Reload
+
+const reload = (done) => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/*.js", gulp.series(scripts));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
-
-// exports.default = gulp.series(
-//   styles, html, server, watcher
-// );
 
 // Build
 
@@ -153,6 +166,7 @@ const build = gulp.series(
   clean,
   copy,
   optimizeImages,
+  optimizeSvg,
   gulp.parallel(
     styles,
     html,

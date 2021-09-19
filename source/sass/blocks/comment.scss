@@ -15,10 +15,11 @@
 .comment__title {
   position: relative;
 
+  display: inline-block;
+
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 39px;
   padding: 0 20px;
-  width: 120px;
 
   color: $black-color;
   font-size: 24px;

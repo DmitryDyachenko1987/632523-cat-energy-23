@@ -2,10 +2,6 @@
   position: relative;
 }
 
-.page-header__wrapper {
-  border-bottom: 1px solid #e6e6e6;
-}
-
 .page-header__logo-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -13,6 +9,8 @@
   justify-content: center;
 
   padding: 11px 20px;
+
+  border-bottom: 1px solid #e6e6e6;
 
   &--inner {
     padding-top: 10px;
@@ -24,8 +22,10 @@
   margin-right: auto;
 
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
+    outline: none;
   }
 
   &:active {
@@ -69,13 +69,11 @@
     padding: 26px 0 0;
   }
 
-  .page-header__wrapper {
-    border: none;
-  }
-
   .page-header__logo-wrapper {
     padding: 0;
     width: 174px;
+
+    border: none;
   }
 
   .page-header__logo-icon {

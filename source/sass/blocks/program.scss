@@ -58,8 +58,13 @@
   border-color: #bababa;
 }
 
-.program__input:disabled ~ .program__label::before {
+.program__input:disabled ~ .program__label {
   opacity: 0.3;
+  cursor: default;
+}
+
+.program__input:disabled ~ .program__label::before {
+  border-color: #bababa;
 }
 
 @media (min-width: $tablet-width) {

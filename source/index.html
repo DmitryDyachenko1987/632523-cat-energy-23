@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -13,19 +14,20 @@
   <body class="page__body page__body--index">
     <!-- Шапка сайта -->
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo-image" href="#">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
-            </picture>
-          </a>
-          <a class="page-header__sign" href="#">
-            <img class="page-header__logo-sign" src="img/header-logo.png" srcset="img/header-logo@2x.png 2x" width="101" height="18" alt="Cat Energy">
-          </a>
-        </div>
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo-image" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop.webp 1x, img/logo-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet.webp 1x, img/logo-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile.webp 1x, img/logo-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
+          </picture>
+        </a>
+        <a class="page-header__sign" href="#">
+          <img class="page-header__logo-sign" src="img/header-logo.png" srcset="img/header-logo@2x.png 2x" width="101" height="18" alt="Cat Energy">
+        </a>
       </div>
       <!-- Основная навигация -->
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -99,7 +101,7 @@
             <p class="features__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="features__item features__item--time">
-            <p class="features__description">Уже через месяц наслаждайтесь изменениями к лучшему<br class="features__transfer"> вашего питомца!</p>
+            <p class="features__description">Уже через месяц наслаждайтесь изменениями к лучшему&nbsp;<br class="features__transfer">вашего питомца!</p>
           </li>
         </ul>
       </section>
@@ -109,7 +111,7 @@
         <div class="story__wrapper">
           <div class="story__inner-wrapper">
             <div class="story__description-block">
-              <p class="story__description">Борис сбросил 5 кг за 2 месяца,  просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и<br class="story__transfer"> по-прежнему спит по 16 часов в день.</p>
+              <p class="story__description">Борис сбросил 5 кг за 2 месяца,  просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и&nbsp;<br class="story__transfer">по-прежнему спит по 16 часов в день.</p>
               <div class="story__stats">
                 <ul class="story__stats-list">
                   <li class="story__stats-item">
@@ -142,12 +144,12 @@
                 </div>
               </div>
               <div class="story__range">
-                <span class="story__range-text story__range-text--before">Было</span>
+                <button class="story__range-text story__range-text--before" type="button">Было</button>
                 <div class="story__range-stripe">
                   <div class="story__range-progress"></div>
                   <div class="story__range-toggle"></div>
                 </div>
-                <span class="story__range-text story__range-text--after">Стало</span>
+                <button class="story__range-text story__range-text--after" type="button">Стало</button>
               </div>
             </div>
           </div>
@@ -173,7 +175,7 @@
         <div class="links__wrapper">
           <a class="links__logo-link" href="#">
             <svg class="links__logo-image" width="128" height="24">
-              <use xlink:href="img/sprite.svg#sign-logo"></use>
+              <use xlink:href="img/sprite.svg#footer-logo"></use>
             </svg>
           </a>
           <div class="links__social social">
@@ -216,6 +218,6 @@
       </div>
     </footer>
     <!-- Скрипты -->
-    <script src="js/menu-open.min.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

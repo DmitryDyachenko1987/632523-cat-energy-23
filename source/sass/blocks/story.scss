@@ -138,15 +138,27 @@
 }
 
 .story__range-text {
+  padding: 0;
+
   color: $black-color;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .story {
-    padding: 40px 0 0;
+    padding: 42px 0 0;
 
     background-color: $white-color;
   }
@@ -247,7 +259,7 @@
   }
 
   .story__range {
-    width: 75%;
+    width: 74%;
   }
 
   .story__range-block {
@@ -342,7 +354,8 @@
       border-radius: 50%;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: (0 2px 4px rgba($black-color, 0.2));
     }
 
@@ -358,13 +371,23 @@
 
     border-bottom: 1px dotted;
     border-color: rgba($black-color, 0.4);
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid;
+      border-color: rgba($black-color, 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .story {
     padding: 0;
-    padding-top: 70px;
+    padding-top: 68px;
   }
 
   .story__title {
